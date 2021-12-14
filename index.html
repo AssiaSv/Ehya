@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- шапка -->
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
-        <div class="navbar">
+        <div class="navbar-top">
           <a href="index.html" class="navbar__link"
             ><img class="navbar__logo" src="img/Logo.svg" alt="Icon:logo"
           /></a>
@@ -34,9 +35,20 @@
             <button class="navbar__button">Получить</button>
           </div>
           <!-- /.navbar-right -->
-          <div class="burger"><span></span><span></span><span></span></div>
+          <div class="burger">
+            <span class="burger__line"></span><span class="burger__line"></span
+            ><span class="burger__line"></span>
+          </div>
+          <!-- /.burger -->
         </div>
-        <!-- /.navbar -->
+        <!-- /.navbar-top -->
+      </div>
+      <!-- /.container -->
+    </header>
+
+    <!-- основная страница -->
+    <div class="description">
+      <div class="container">
         <div class="info">
           <div class="info-left">
             <h1 class="info__title">Design Theory:</h1>
@@ -50,9 +62,9 @@
               проектов для крупных клиентов. Теперь я делюсь своими золотыми
               стратегиями ценообразования на творческую работу.
             </p>
-            <div class="info-block">
-              <button class="button button__buy">Купить сейчас</button>
-              <a href="#" class="button button__read">Читать демо</a>
+            <div class="button">
+              <button class="button__buy">Купить сейчас</button>
+              <a href="#" class="button__read">Читать демо</a>
             </div>
           </div>
           <!-- /.info-left -->
@@ -61,9 +73,10 @@
           </div>
           <!-- /.info-right -->
         </div>
-        <!-- /.info -->
+        <!-- /.info-->
       </div>
       <!-- /.container -->
-    </header>
+    </div>
+    <!-- /.description -->
   </body>
 </html>

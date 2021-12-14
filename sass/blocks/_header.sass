@@ -1,10 +1,14 @@
-.header
-  padding-top: 35px
-  padding-bottom: 100px
 .navbar
-  display: flex
-  justify-content: space-between
-  align-items: center
+  background-color: $light
+  // display: flex
+  // justify-content: space-between
+  // align-items: center
+  padding-top: 35px
+  padding-bottom: 35px
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
   &__link
     cursor: pointer
   &-right
@@ -13,6 +17,7 @@
   &-menu
     list-style-type: none
     display: flex
+    padding-left: 0
     &__link
       text-decoration: none
       font-style: normal
@@ -36,14 +41,18 @@
     cursor: pointer
     margin-left: 37px
     outline: none
+.description
+  padding-top: 55px
+  padding-bottom: 100px
 .info
-  padding-top: 90px
   display: flex
   &-right
     padding: 103px 119px
     background-color: rgba(179,186,197, 0.1)
+    text-align: center
+    align-self: center
   &-left
-    padding: 46px 67px 56px 0
+    padding: 46px 67px 0 0
     display: flex
     flex-direction: column
   &__title
@@ -74,6 +83,7 @@
     margin-top: 0
     margin-bottom: 36px
   &__text
+    font-family: 'Open Sans', sans-serif
     font-style: normal
     font-weight: normal
     font-size: 18px
@@ -82,10 +92,6 @@
     margin-top: 0
     margin-bottom: 56px
 .button
-  text-transform: uppercase
-  font-style: normal
-  font-weight: bold
-  border-radius: 8px
   &__buy
     font-size: 16px
     line-height: 22px
@@ -96,6 +102,10 @@
     cursor: pointer
     margin-right: 21px
     outline: none
+    text-transform: uppercase
+    font-style: normal
+    font-weight: bold
+    border-radius: 8px
   &__read
     font-size: 18px
     line-height: 25px
@@ -106,5 +116,9 @@
     cursor: pointer
     outline: none
     text-decoration: none
+    text-transform: uppercase
+    font-style: normal
+    font-weight: bold
+    border-radius: 8px
 .burger
   display: none
