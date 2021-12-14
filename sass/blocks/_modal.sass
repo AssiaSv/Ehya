@@ -1,0 +1,118 @@
+.modal
+  &-open
+    overflow: hidden
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.1)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 33px 88px
+    background-color: $light
+    border-radius: 8px
+    color: red
+    z-index: 110
+    max-width: 478px
+    max-height: 95%
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    overflow-y: auto
+    &--visible
+      visibility: visible
+      opacity: 1
+      overflow-y: auto
+  &__close
+    position: absolute
+    top: 13px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+    background-color: $blue
+    width: 20px
+    height: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__title
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 22px
+    text-transform: uppercase
+    font-style: normal
+    font-weight: bold
+    margin-bottom: 0
+    margin-top: 0
+    text-align: center
+    color: $blue
+  &__input
+    background-color: $light
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    color: $blue
+    font-size: 14px
+    line-height: 22px
+    border: 1px solid $blue
+    border-radius: 4px
+    padding: 17px 23px
+    margin-top: 15px
+    width: 100%
+    min-height: 50px
+    outline: none
+  &__message
+    background-color: $light
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-size: 14px
+    line-height: 22px
+    color: $blue
+    border: 1px solid $blue
+    border-radius: 4px
+    resize: none
+    padding: 18px 23px
+    margin-top: 15px
+    margin-bottom: 15px
+    width: 100%
+    min-height: 123px
+    outline: none
+  &__button
+    margin-right: 0
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    line-height: 22px
+    color: $light
+    background-color: $blue
+    border: 2px solid transparent
+    padding: 16px 50px
+    cursor: pointer
+    margin-right: 21px
+    outline: none
+    text-transform: uppercase
+    font-style: normal
+    font-weight: bold
+    border-radius: 8px
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    display: inline-block
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: center
