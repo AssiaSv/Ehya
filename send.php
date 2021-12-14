@@ -5,21 +5,27 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
+$email = $_POST['email'];
 
 if
-($name = $_POST['name'] and $phone = $_POST['phone'] and $email = $_POST['email'] and $message = $_POST['message']){
-    $title = "Новое обращение Best Tour Plan";
+($name = $_POST['name'] and $phone = $_POST['phone'] and $email = $_POST['email']){
+    $title = "Новое обращение Ehya";
     $body = "
     <h2>Новое обращение</h2>
     <b>Имя:</b>$name<br>
-    <b>Телефон:</b>$phone<br><br>
+    <b>Телефон:</b>$phone<br>
+    <b>Почта:</b>$email<br><br>
     <b>Сообщение:</b><br>$message
 
 ";
 }
-if
-($email = $_POST['email']){
-    $title = "Новое обращение Best Tour Plan";
+
+else
+{
+    $title = "Новая подписка Ehya";
     $body = "
     <h2>Новое обращение</h2>
     <b>Email:</b><br>$email
