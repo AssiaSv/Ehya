@@ -61,4 +61,25 @@ $(document).keyup(function (e) {
     });
   });
   $(".phone").mask("+7(999) 999-99-99");
+
+  // слайдер с категориями
+  var swiperSlider = new Swiper('.categories-slider', {
+  // Optional parameters
+    loop: true,
+    autoplay: {
+    delay: 7000,
+    },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper__button--next',
+    prevEl: '.swiper__button--prev',
+  },
+  
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  
+});
 });

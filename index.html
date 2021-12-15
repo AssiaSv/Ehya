@@ -141,7 +141,9 @@
               <div class="advice-block">
                 <div class="card">
                   <div class="card-left">
-                    <div class="card__image"><img src="img/card-1.png" alt="Book" class="card__img" /></div>
+                    <div class="card__image">
+                      <img src="img/card-1.png" alt="Book" class="card__img" />
+                    </div>
                   </div>
                   <div class="card-right">
                     <span class="card__title">The World of Abstract Art</span>
@@ -158,10 +160,15 @@
 
                 <div class="card">
                   <div class="card-left">
-                    <div class="card__image"><img src="img/card-2.png" alt="Book" class="card__img" /></div>
+                    <div class="card__image">
+                      <img src="img/card-2.png" alt="Book" class="card__img" />
+                    </div>
                   </div>
                   <div class="card-right">
-                    <span class="card__title">Educated : <br> a Memoir</span>
+                    <span class="card__title"
+                      >Educated : <br />
+                      a Memoir</span
+                    >
                     <span class="card__subtitle">Education</span>
                     <span class="card__price">$28.00</span>
                     <div class="card__bought">
@@ -175,7 +182,9 @@
 
                 <div class="card">
                   <div class="card-left">
-                    <div class="card__image"><img src="img/card-3.png" alt="Book" class="card__img" /></div>
+                    <div class="card__image">
+                      <img src="img/card-3.png" alt="Book" class="card__img" />
+                    </div>
                   </div>
                   <div class="card-right">
                     <span class="card__title">The Blue Flowers Ray…</span>
@@ -192,10 +201,15 @@
 
                 <div class="card">
                   <div class="card-left">
-                    <div class="card__image"><img src="img/card-4.png" alt="Book" class="card__img" /></div>
+                    <div class="card__image">
+                      <img src="img/card-4.png" alt="Book" class="card__img" />
+                    </div>
                   </div>
                   <div class="card-right">
-                    <span class="card__title">There There : <br> a Novel by TO</span>
+                    <span class="card__title"
+                      >There There : <br />
+                      a Novel by TO</span
+                    >
                     <span class="card__subtitle">Novel</span>
                     <span class="card__price">$20.00</span>
                     <div class="card__bought">
@@ -209,10 +223,15 @@
 
                 <div class="card">
                   <div class="card-left">
-                    <div class="card__image"><img src="img/card-5.png" alt="Book" class="card__img" /></div>
+                    <div class="card__image">
+                      <img src="img/card-5.png" alt="Book" class="card__img" />
+                    </div>
                   </div>
                   <div class="card-right">
-                    <span class="card__title">WMNDFL : <br> The Inspiration</span>
+                    <span class="card__title"
+                      >WMNDFL : <br />
+                      The Inspiration</span
+                    >
                     <span class="card__subtitle">Business</span>
                     <span class="card__price">$23.00</span>
                     <div class="card__bought">
@@ -226,10 +245,15 @@
 
                 <div class="card">
                   <div class="card-left">
-                    <div class="card__image"><img src="img/card-6.png" alt="Book" class="card__img" /></div>
+                    <div class="card__image">
+                      <img src="img/card-6.png" alt="Book" class="card__img" />
+                    </div>
                   </div>
                   <div class="card-right">
-                    <span class="card__title">Making <br> Things Happen</span>
+                    <span class="card__title"
+                      >Making <br />
+                      Things Happen</span
+                    >
                     <span class="card__subtitle">Motivation</span>
                     <span class="card__price">$23.00</span>
                     <div class="card__bought">
@@ -317,11 +341,58 @@
           <!-- /.best -->
         </div>
         <!-- /.recomendations-wrapper -->
-        <hr class="recomendations__line"></hr>
+        <hr class="recomendations__line" />
       </div>
       <!-- /.container -->
     </section>
     <!-- /.recomendations -->
+
+    <!-- слайдер с категориями -->
+    <div class="categories">
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper categories-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper__card">
+                <img src="img/ctg-1.svg" alt="icon" class="swiper__img" />
+                <span class="swiper__name">Бизнес & Финансы</span>
+                <span class="swiper__subname">Книги про мир бизнеса</span>
+              </div>
+              <!-- /.swiper__card -->
+
+              <div class="swiper__card">
+                <img src="img/ctg-2.svg" alt="icon" class="swiper__img" />
+                <span class="swiper__name">Самомотиватия</span>
+                <span class="swiper__subname">Книги о мотивации</span>
+              </div>
+              <!-- /.swiper__card -->
+
+              <div class="swiper__card">
+                <img src="img/ctg-3.svg" alt="icon" class="swiper__img" />
+                <span class="swiper__name">Романы Теленовеллы</span>
+                <span class="swiper__subname">Книги с крутыми историями</span>
+              </div>
+              <!-- /.swiper__card -->
+
+              <div class="swiper__card">
+                <img src="img/ctg-4.svg" alt="icon" class="swiper__img" />
+                <span class="swiper__name">Навыки будущего</span>
+                <span class="swiper__subname">Книги для самоподготовки</span>
+              </div>
+              <!-- /.swiper__card -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+          <div class="swiper__button swiper__button--prev"></div>
+          <div class="swiper__button swiper__button--next"></div>
+        </div>
+        <!-- /.swiper-container -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.categories -->
     <!-- скрипты -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

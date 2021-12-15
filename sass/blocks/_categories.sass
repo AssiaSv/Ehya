@@ -1,0 +1,61 @@
+.categories
+  padding-top: 60px
+  padding-bottom: 100px
+.swiper
+  height: 240px
+  width: 1140px
+
+  &-wrapper
+    height: 240px
+    width: 1140px
+    overflow: hidden
+  &-slide
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__button
+
+    top: 45%
+    transform: translateY(-45%)
+    width: 30px
+    height: 30px
+    background-repeat: no-repeat
+    background-size: 10px
+    background-position: center
+    border: none
+    background-color: transparent
+    cursor: pointer
+    z-index: 99
+    &--prev
+      background-image: url(../img/prev.svg)
+
+    &--next
+      background-image: url(../img/next.svg)
+
+  &__card
+    display: flex
+    flex-direction: column
+    border-radius: 8px
+    border: 1px solid #ECEEF2
+    padding: 40px 14px 30px 14px
+    align-items: center
+    width: 265px
+  &__img
+    width: 64px
+    height: 64px
+    margin-bottom: 40px
+  &__name
+    margin-bottom: 12px
+    font-family: 'Roboto', sans-serif
+    color: $dark
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+  &__subname
+    font-family: 'Open Sans', sans-serif
+    color: $text
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
