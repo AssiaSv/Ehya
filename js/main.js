@@ -80,4 +80,22 @@ $(document).keyup(function (e) {
   },
   
 });
+
+
+
+var count=0;
+btN.onclick=function(){
+  count++;
+  if(count>1)
+  document.getElementById('btN').style.display='none';
+};
+var count=0;
+btn.onclick=function(){
+  count++;
+  if(count>2)
+  document.getElementById('btN').style.display='flex';
+};
+
+
+
 });
