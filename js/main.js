@@ -66,9 +66,7 @@ $(document).keyup(function (e) {
   var swiperSlider = new Swiper('.categories-slider', {
   // Optional parameters
     loop: true,
-    autoplay: {
-    delay: 7000,
-    },
+    
 
   // Navigation arrows
   navigation: {
