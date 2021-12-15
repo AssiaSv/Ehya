@@ -80,6 +80,24 @@ $(document).keyup(function (e) {
   },
   
 });
+  // слайдер с неизданными книгами
+  var bookSlider = new Swiper('.book-slider', {
+  // Optional parameters
+    loop: true,
+    
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.book__button--next',
+    prevEl: '.book__button--prev',
+  },
+  
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  
+});
 
 
 
