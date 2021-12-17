@@ -90,12 +90,12 @@ $(document).keyup(function (e) {
 });
 
 //Слайдер 2
-var reviewsSlider = new Swiper(".book-slider", {
+var reviewsSlider = new Swiper(".slider-unedited__container", {
   
   loop: false,
   navigation: {
-    nextEl: ".book__button--next",
-    prevEl: "book__button--prev",
+    nextEl: ".unedited__button--next",
+    prevEl: ".unedited__button--prev",
   },
   slidesPerView: 5,
     spaceBetween: 30,
