@@ -62,23 +62,32 @@ $(document).keyup(function (e) {
   });
   $(".phone").mask("+7(999) 999-99-99");
 
-  // слайдер с категориями
-  var swiperSlider = new Swiper('.categories-slider', {
-  // Optional parameters
-    loop: true,
-    
+  //Слайдер 1
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper__button--next',
-    prevEl: '.swiper__button--prev',
-  },
-  
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-  
+  var categoriesSlider = new Swiper(".slider-categories__container", {
+    
+    slidesPerColumnFill: 'row',
+    loop: false,
+    navigation: {
+      nextEl: ".slide-button--next",
+      prevEl: ".slide-button--prev"
+    },  
+    
+    simulateTouch: true,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    
+    breakpoints: {
+      320: {slidesPerView: 2, slidesPerColumn: 2},
+      510: {slidesPerView: 3, slidesPerColumn: 2},      
+      767: {slidesPerView: 3, slidesPerColumn: 1, spaceBetween: 0},
+      1200: {slidesPerView: 4, slidesPerColumn: 1, spaceBetween: 27}
+    },
+    
 });
   // слайдер с неизданными книгами
   var bookSlider = new Swiper('.book-slider', {
@@ -101,18 +110,18 @@ $(document).keyup(function (e) {
 
 
 
-var count=0;
-btN.onclick=function(){
-  count++;
-  if(count>1)
-  document.getElementById('btN').style.display='none';
-};
-var count=0;
-btn.onclick=function(){
-  count++;
-  if(count>2)
-  document.getElementById('btN').style.display='flex';
-};
+// var count=0;
+// btN.onclick=function(){
+//   count++;
+//   if(count>1)
+//   document.getElementById('btN').style.display='none';
+// };
+// var count=0;
+// btn.onclick=function(){
+//   count++;
+//   if(count>2)
+//   document.getElementById('btN').style.display='flex';
+// };
 
 
 
