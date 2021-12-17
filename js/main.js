@@ -117,6 +117,76 @@ var reviewsSlider = new Swiper(".slider-unedited__container", {
     },
 });
 
+//красное сердце
+var menuButton = $(".card__like");
+  menuButton.on("click", function () {  
+    $(this).toggleClass("card__like--active");
+}); 
+
+// видео
+var player;
+$('.history__play').on('click', function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player-1', {
+    height: '380',
+    width: '100%',
+    videoId: 'Q9wWL8TeIos',
+    events: {
+      'onReady': videoPlay,
+    }
+  });
+ })
+
+ function videoPlay(event) {
+   event.target.playVideo();
+ }
+// видео-1
+var player;
+$('.history__button--first').on('click', function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player-2', {
+    height: '200',
+    width: '100%',
+    videoId: 'Q9wWL8TeIos',
+    events: {
+      'onReady': videoPlay,
+    }
+  });
+ })
+
+ function videoPlay(event) {
+   event.target.playVideo();
+ }
+// видео-2
+var player;
+$('.history__button--two').on('click', function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player-3', {
+    height: '200',
+    width: '100%',
+    videoId: 'Q9wWL8TeIos',
+    events: {
+      'onReady': videoPlay,
+    }
+  });
+ })
+
+ function videoPlay(event) {
+   event.target.playVideo();
+ }
+// видео-3
+var player;
+$('.history__button--three').on('click', function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player-4', {
+    height: '200',
+    width: '100%',
+    videoId: 'Q9wWL8TeIos',
+    events: {
+      'onReady': videoPlay,
+    }
+  });
+ })
+
+ function videoPlay(event) {
+   event.target.playVideo();
+ }
 //   // слайдер с неизданными книгами
 //   var bookSlider = new Swiper('.book-slider', {
 //   // Optional parameters
