@@ -83,30 +83,58 @@ $(document).keyup(function (e) {
     
     breakpoints: {
       320: {slidesPerView: 2, slidesPerColumn: 2},
-      510: {slidesPerView: 3, slidesPerColumn: 2},      
+      576: {slidesPerView: 2, slidesPerRow: 2},      
       767: {slidesPerView: 3, slidesPerColumn: 1, spaceBetween: 0},
       1200: {slidesPerView: 4, slidesPerColumn: 1, spaceBetween: 27}
     },
-    
 });
-  // слайдер с неизданными книгами
-  var bookSlider = new Swiper('.book-slider', {
-  // Optional parameters
-    loop: true,
+
+//Слайдер 2
+var reviewsSlider = new Swiper(".book-slider", {
+  
+  loop: false,
+  navigation: {
+    nextEl: ".book__button--next",
+    prevEl: "book__button--prev",
+  },
+  slidesPerView: 5,
+    spaceBetween: 30,
+    
+    simulateTouch: true,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    
+    breakpoints: {
+      200: {slidesPerView: 1},
+      480: {slidesPerView: 2, spaceBetween: 25},
+      767: {slidesPerView: 3},
+      992: {slidesPerView: 4},
+      1200: {slidesPerView: 5}
+    },
+});
+
+//   // слайдер с неизданными книгами
+//   var bookSlider = new Swiper('.book-slider', {
+//   // Optional parameters
+//     loop: true,
     
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.book__button--next',
-    prevEl: '.book__button--prev',
-  },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.book__button--next',
+//     prevEl: '.book__button--prev',
+//   },
   
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
+//   keyboard: {
+//     enabled: true,
+//     onlyInViewport: false,
+//   },
   
-});
+// });
 
 
 

@@ -37,26 +37,6 @@
       flex-basis: 100%
     &__book
       flex-basis: 100%
-  .categories
-    &-container
-      width: 1000px
-      display: flex
-  .swiper
-    &-slide
-      justify-content: center
-    &__card
-      margin-right: 9px
-    &__name
-      font-size: 18px
-    &__subname
-      font-size: 14px
-    &__card
-      width: 230px
-    &__button
-      &--prev
-        left: -6px
-      &--next
-        right: 2px
   .book
     &__button
       &--prev
@@ -163,14 +143,22 @@
     &-block
       padding-right: 0
       padding-left: 0
-  .categories
-    &-container
-      max-width: 737px
-  .swiper
-    &-slide
-      flex-wrap: wrap
-    &__card
-      width: 263px
+  .slide
+    &-categories
+      &__block
+        width: 210px
+        padding: 30px 5px 20px 5px
+    &-block
+      &__name
+        font-size: 18px
+        line-height: 20px
+      &__subname
+        font-size: 14px
+    &-button
+      &--next
+        right: -10px
+      &--prev
+        left: -40px
   .history
     &__container
       max-width: 737px
@@ -311,6 +299,10 @@
       &__dialog
         width: 400px
         padding: 33px 45px
+    .categories
+      &__container
+        height: 450px
+        margin-bottom: 10px
   @media (max-width: 575px)
     .container
       max-width: 85%
