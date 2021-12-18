@@ -303,6 +303,54 @@
       &__container
         height: 450px
         margin-bottom: 10px
+    .slide
+      &-button
+        &--prev
+          left: 90px
+          top: 60%
+        &--next
+          right: 90px
+          top: 276px
+    .history
+      &__big
+        max-width: 100%
+      &__container
+        max-width: 87%
+      &__about
+        max-width: 100%
+      &__block
+        width: 100%
+    .partners
+      &__container
+        width: 87%
+      &__block
+        &-second
+          display: none
+        &-first
+          flex-wrap: wrap
+          width: 500px
+          margin: auto
+      &__card
+        margin-right: 30px
+    .blog
+      &__left
+        width: 100%
+      &__preface
+        width: 100%
+      &__image
+        width: 100%
+    .action
+      &-container
+        width: 87%
+      &-wrapper
+        width: 100%
+        flex-direction: column
+        align-items: center
+      &__title
+        margin-bottom: 0
+      &__form
+        margin-top: 19px
+
   @media (max-width: 575px)
     .container
       max-width: 85%
@@ -315,6 +363,63 @@
       &__buy
         margin-right: 0
         margin-bottom: 15px
+    .card
+      &-hidden
+        display: none
+    .history
+      &__container
+        width: 85%
+      &__text
+        font-size: 18px
+        line-height: 25px
+        margin: 0
+        margin-bottom: 20px
+        text-align: center
+      &__about
+        flex-direction: column
+        align-items: center
+      &__title
+        margin: 0
+        margin-bottom: 25px
+      &__card
+        width: 210px
+      &__mini
+        width: 210px
+    .partners
+      &__container
+        width: 85%
+      &__block
+        &-second
+          display: none
+        &-first
+          flex-wrap: wrap
+          width: 70%
+          align-items: center
+          justify-content: space-between
+      &__card
+        margin-right: 30px
+    .blog
+      &__image
+        width: 100%
+      &__block
+        &-big
+          width: 100%
+          display: flex
+          flex-direction: column
+          align-items: center
+      &__subname
+        font-size: 14px
+        line-height: 20px
+    .action
+      &-container
+        width: 85%
+    .footer
+      &__connection
+        flex-basis: 100%
+        align-items: center
+      &__box
+        margin-right: 16px
+        margin-bottom: 20px
   @media (max-width: 480px) and (min-width: 320px)
     .container
       max-width: 280px
@@ -379,6 +484,91 @@
         padding-bottom: 14px
       &__message
         min-height: 114px
+    .descriptions
+      margin-bottom: 56px
+    .advice
+      &__title
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 49px
+        text-align: center
+    .card
+      flex-direction: column
+      align-items: center
+      &-left
+        padding: 0
+        position: relative
+        height: 125px
+        display: flex
+        justify-content: center
+      &__image
+        height: 147px
+        width: 95px
+        position: absolute
+        top: -20px
+      &__title
+        font-size: 20px
+        line-height: 24px
+      &-right
+        padding-left: 0
+        align-items: center
+      &__subtitle
+        font-size: 14px
+        line-height: 20px
+      &__price
+        font-size: 16px
+        line-height: 20px
+    .best
+      &__title
+        text-align: center
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 36px
+      &__name
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 12px
+        font-family: 'Roboto Condensed', sans-serif
+        font-weight: bold
+      &__img
+        height: 147px
+        width: 95px
+      &__price
+        margin-bottom: 14px
+      &__right
+        padding-left: 14px
+        padding-right: 65px
+        padding-top: 0
+    .history
+      &__container
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        font-size: 18px
+        line-height: 25px
+      &__big
+        width: 100%
+      &__video
+        width: 300px
+        height: 210px
+      &__play
+        width: 56px
+        height: 56px
+        &-blue
+          width: 17px
+          height: 22px
+      &__text
+        width: 100%
+      &__mini
+        width: 140px
+        height: 140px
+      &__img
+        width: 140px
+        height: 140px
+    .blog
+      &__card
+        flex-direction: column
 @media (min-width: 993px)
   .card, .best, .blog
     &__button
