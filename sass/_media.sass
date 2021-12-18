@@ -358,6 +358,17 @@
       &-unedited
         &__wrapp
           margin: 0 auto
+    .categories
+      &__container
+        height: 450px
+      &__slider
+        height: 450px
+    // .slider
+    //   &-categories
+    //     &__wrapper
+    //       flex-wrap: wrap
+    //       width: 1199px
+    //       overflow: hidden
 
   @media (max-width: 575px)
     .container
@@ -455,9 +466,35 @@
       &-unedited
         &__wrapp
           margin: 0 auto
+      &-block
+        &__name
+          font-size: 16px
+          line-height: 20px
+          margin-bottom: 10px
+        &__subname
+          font-size: 12px
+          line-height: 20px
+        &__text
+          width: 100%
+          align-items: center
+      &-categories
+        &__block
+          width: 140px
+          height: 182px
+          padding: 20px 24px 12px 24px
+      &__img
+        width: 36px
+        height: 36px
+        margin-bottom: 16px
     .footer
       &__politics
         display: none
+    .slider
+      &-categories
+        &__wrapper
+          flex-wrap: wrap
+          width: 1199px
+          overflow: hidden
   @media (max-width: 480px) and (min-width: 320px)
     .container
       max-width: 280px

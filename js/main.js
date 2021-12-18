@@ -83,7 +83,7 @@ $(document).keyup(function (e) {
     
     breakpoints: {
       320: {slidesPerView: 2, slidesPerColumn: 2},
-      576: {slidesPerView: 2, slidesPerRow: 2},      
+      510: {slidesPerView: 2, slidesPerRow: 4},      
       767: {slidesPerView: 3, slidesPerColumn: 1, spaceBetween: 0},
       1200: {slidesPerView: 4, slidesPerColumn: 1, spaceBetween: 27}
     },
