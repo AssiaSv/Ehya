@@ -86,11 +86,17 @@ $(document).keyup(function (e) {
     // },
     
     // breakpoints: {
-    //   // 320: {slidesPerView: 2, slidesPerColumn: 2},
+    //   320: {slidesPerView: 2, slidesPerColumn: 2},
     //   320: {slidesPerView: 2, grid: { rows: 2}},      
     //   767: {slidesPerView: 3, slidesPerColumn: 1, spaceBetween: 0},
     //   1200: {slidesPerView: 4, slidesPerColumn: 1, spaceBetween: 27}
     // },
+    breakpoints: {
+      320: {slidesPerView: 2, slidesPerColumn: 2},
+      560: {slidesPerView: 2, slidesPerColumn: 2},      
+      767: {slidesPerView: 3, slidesPerColumn: 1, spaceBetween: 0},
+      1200: {slidesPerView: 4, slidesPerColumn: 1, spaceBetween: 27}
+    },
 });
 
 //Слайдер 2
