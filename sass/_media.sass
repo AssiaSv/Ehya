@@ -102,6 +102,10 @@
     &__box
       min-width: 148px
       margin-right: 23px
+  .slide
+    &-unedited
+      &__wrapp
+        margin: 0 auto
 @media (max-width: 991px)
   .container
     max-width: 737px
@@ -350,6 +354,10 @@
         margin-bottom: 0
       &__form
         margin-top: 19px
+    .slide
+      &-unedited
+        &__wrapp
+          margin: 0 auto
 
   @media (max-width: 575px)
     .container
@@ -420,6 +428,36 @@
       &__box
         margin-right: 16px
         margin-bottom: 20px
+    .swiper
+      &-wrapper
+        justify-content: space-between
+      &-slide
+        &-active
+          margin-right: 0
+    .unedited
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__button
+        margin-top: 7px
+      &__wrapper
+        &-slide
+          position: absolute
+          bottom: 20px
+        &-top
+          flex-direction: column
+          align-items: center
+      &__title
+        margin-bottom: 31px
+      &__slider
+        margin-bottom: 40px
+    .slide
+      &-unedited
+        &__wrapp
+          margin: 0 auto
+    .footer
+      &__politics
+        display: none
   @media (max-width: 480px) and (min-width: 320px)
     .container
       max-width: 280px
@@ -541,6 +579,15 @@
         padding-top: 0
     .history
       &__container
+        max-width: 300px
+        min-width: 300px
+        margin: auto
+      &__about
+        width: 280px
+        margin-left: auto
+        margin-right: auto
+      &__block
+
       &__title
         font-size: 28px
         line-height: 36px
@@ -548,7 +595,11 @@
         font-size: 18px
         line-height: 25px
       &__big
-        width: 100%
+        max-width: 300px
+        align-items: center
+        justify-content: center
+        margin-left: auto
+        margin-right: auto
       &__video
         width: 300px
         height: 210px
@@ -562,13 +613,116 @@
         width: 100%
       &__mini
         width: 140px
-        height: 140px
+        height: 138px
       &__img
+        width: 100%
+        height: 100%
+      &__name
+        font-size: 16px
+        line-height: 20px
+      &__subname
+        font-size: 12px
+        line-height: 20px
+      &__describe
+        flex-direction: column
+        align-items: center
+      &__group
+        align-items: center
+      &__card
         width: 140px
-        height: 140px
+      &__play
+        &-light
+          width: 21px
+          height: 27px
     .blog
       &__card
-        flex-direction: column
+        &-left
+          width: 90px
+          height: 90px
+          margin-right: 20px
+      &__img
+        width: 90px
+        height: 90px
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__name
+        font-size: 16px
+        line-height: 20px
+        margin-left: 0
+      &__text
+        font-size: 12px
+        line-height: 24px
+        margin-left: 0
+      &__data
+        font-size: 10px
+        line-height: 20px
+        margin-top: 0
+        margin-bottom: 6px
+      &__subname
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 6px
+      &__read
+        font-size: 10px
+        line-height: 20px
+      &__button
+        font-size: 14px
+        line-height: 20px
+        padding: 9px 49px
+    .partners
+      &__container
+        width: 280px
+      &__block
+        &-first
+          width: 100%
+    .action
+      &-container
+        width: 100%
+      &-wrapper
+        &::after
+          width: 786px
+          height: 786px
+          top: -928px
+          left: -633px
+          border-width: 173px
+        &::before
+          top: 173px
+          left: -26px
+      &__name
+        font-size: 28px
+        line-height: 36px
+        width: 280px
+      &__form
+        width: 272px
+        height: 112px
+        background-color: #fff
+        border-radius: 8px
+      &__input
+        width: 100%
+        padding: 17px 48px 17px 48px
+      &__button
+        bottom: 0
+        top: 60px
+        right: 11px
+        left: 11px
+        width: 250px
+        height: 42px
+    .footer
+      padding-top: 48px
+      &__name
+        font-size: 16px
+        line-height: 22px
+      &__li
+        font-size: 14px
+        line-height: 20px
+      &__box
+        min-width: 132px
+        margin-right: 0
+      &__connection
+        margin-right: 0
+      &__text
+        text-align: center
 @media (min-width: 993px)
   .card, .best, .blog
     &__button

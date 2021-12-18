@@ -110,7 +110,7 @@ var reviewsSlider = new Swiper(".slider-unedited__container", {
     
     breakpoints: {
       200: {slidesPerView: 1},
-      530: {slidesPerView: 2, spaceBetween: 25},
+      520: {slidesPerView: 2, spaceBetween: 25},
       767: {slidesPerView: 3},
       992: {slidesPerView: 4},
       1200: {slidesPerView: 5}
