@@ -3,6 +3,7 @@ var burger = document.querySelector(".burger");
 burger.addEventListener("click", function () {
   // console.log("клик по кнопке меню");
   document.querySelector(".navbar-right").classList.toggle("navbar-right--visible");
+  $("body").toggleClass("body__no-scroll");
 });
 
 // модальное окно
@@ -39,6 +40,8 @@ $(document).keyup(function (e) {
     modalDialog.removeClass("modal__dialog--visible");
   }
   });
+
+  
   // обработка форм
   $('.form').each(function(){
     $(this).validate({
@@ -197,6 +200,29 @@ $('.history__button--three').on('click', function onYouTubeIframeAPIReady() {
  function videoPlay(event) {
    event.target.playVideo();
  }
+
+ //якорь 
+      var $page = $('html, body');
+        $('a[href="#recomendation"]').click(function() {
+          $page.animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+        return false;
+      });
+      var $page = $('html, body');
+        $('a[href="#booking"]').click(function() {
+          $page.animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        return false;
+      });
+      var $page = $('html, body');
+        $('a[href="#bloging"]').click(function() {
+          $page.animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
+        return false;
+      });
 //   // слайдер с неизданными книгами
 //   var bookSlider = new Swiper('.book-slider', {
 //   // Optional parameters
@@ -231,6 +257,18 @@ $('.history__button--three').on('click', function onYouTubeIframeAPIReady() {
 //   document.getElementById('btN').style.display='flex';
 // };
 
-
+//кнопка домой
+  var btn = $(".home");    
+        $(window).scroll(function(e) {  
+          if ($(window).scrollTop() > 700) {  
+          btn.addClass("arrow-up--show");
+        } else {
+          btn.removeClass("arrow-up--show");
+        }
+        });
+          $(".home").click(function(e) {
+            e.preventDefault();
+          $("body,html").animate({scrollTop:0},700);
+          });
 
 });
