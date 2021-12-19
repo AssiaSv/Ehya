@@ -177,6 +177,14 @@
     &__block
       max-width: 737px
     &__card
+      width: 350px
+    &__mini
+      width: 350px
+      height: 250px
+    &__img
+      width: 100%
+      height: 100%
+    &__card
       &--hidden
         display: none
   .partners
@@ -187,13 +195,19 @@
     padding-bottom: 12px
     &__left
       flex-direction: column
-      align-items: start
+      align-items: center
       max-width: 737px
+      margin-bottom: 38px
     &__image
       text-align: center
+      height: 300px
     &__preface
       width: 737px
-      align-items: start
+      align-items: center
+    &__title
+      text-align: center
+    &__text
+      text-align: center
   .action
     &-container
       max-width: 737px
@@ -210,14 +224,20 @@
     &__title
       font-size: 30px
   .footer
+    padding-bottom: 0
     &__connection
       order: 5
       margin-top: 50px
+      flex-basis: 100%
+      align-items: center
+      justify-content: center
     &__descriptions
       flex-wrap: wrap
       justify-content: space-between
     &__box
       margin-right: 0
+    &__politics
+      display: none
   @media (max-width: 767px)
     .container
       max-width: 87%
@@ -318,12 +338,27 @@
     .history
       &__big
         max-width: 100%
+      &__video
+        width: 100%
+        height: 250px
       &__container
         max-width: 87%
       &__about
         max-width: 100%
       &__block
         width: 100%
+      &__text
+        margin-right: 0
+        text-align: end
+      &__card
+        width: 245px
+      &__mini
+        width: 245px
+        height: 180px
+        margin-right: 0
+      &__img
+        width: 100%
+        height: 100%
     .partners
       &__container
         width: 87%
@@ -343,6 +378,9 @@
         width: 100%
       &__image
         width: 100%
+      &__block
+        &-big
+          width: 100%
     .action
       &-container
         width: 87%
@@ -363,6 +401,9 @@
         height: 450px
       &__slider
         height: 450px
+    .footer
+      &__connection
+        margin-top: 4px
     // .slider
     //   &-categories
     //     &__wrapper
@@ -386,6 +427,7 @@
       &-hidden
         display: none
     .history
+      padding-bottom: 65px
       &__container
         width: 85%
       &__text
@@ -404,6 +446,26 @@
         width: 210px
       &__mini
         width: 210px
+      &__big
+        width: 100%
+      &__video
+        width: 100%
+        height: 210px
+      &__mini
+        width: 200px
+        height: 138px
+        margin-bottom: 17px
+      &__img
+        height: 100%
+      &__block
+        width: 100%
+      &__card
+        width: 200px
+      &__describe
+        flex-direction: column
+        align-items: center
+      &__group
+        align-items: center
     .partners
       &__container
         width: 85%
@@ -416,7 +478,7 @@
           align-items: center
           justify-content: space-between
       &__card
-        margin-right: 30px
+        margin-right: 0
     .blog
       &__image
         width: 100%
@@ -432,12 +494,22 @@
     .action
       &-container
         width: 85%
+      &__form
+        width: 345px
+      &__name
+        width: 345px
     .footer
+      padding-top: 48px
+      padding-bottom: 0
       &__connection
         flex-basis: 100%
         align-items: center
       &__box
         margin-right: 16px
+        margin-bottom: 20px
+        min-width: 175px
+      &__text
+        text-align: center
         margin-bottom: 20px
     .swiper
       &-wrapper
@@ -445,6 +517,7 @@
       &-slide
         &-active
           margin-right: 0
+
     .unedited
       &__title
         font-size: 28px
@@ -463,6 +536,40 @@
       &__slider
         margin-bottom: 40px
     .slide
+      &-categories
+        &__block
+          margin-bottom: 10px
+          padding-top: 0
+          padding-bottom: 0
+          padding-right: 20px
+          padding-left: 16px
+      &-block
+        &__name
+          font-size: 16px
+          line-height: 20px
+          font-family: 'Roboto Condensed', sans-serif
+          text-align: center
+          justify-content: start
+          &--mb
+            margin-bottom: 30px
+        &__subname
+          text-align: center
+      &__img
+        margin-top: 20px
+        margin-bottom: 11px
+      &-button
+        width: 48px
+        height: 48px
+        &--next
+          right: 96px
+          top: 453px
+        &--prev
+          left: 72px
+          top: 445px
+    .categories
+      &__container
+        margin-bottom: 75px
+    .slide
       &-unedited
         &__wrapp
           margin: 0 auto
@@ -477,9 +584,18 @@
         &__text
           width: 100%
           align-items: center
+      &-button
+        width: 48px
+        height: 48px
+        &--next
+          right: 96px
+          top: 453px
+        &--prev
+          left: 72px
+          top: 445px
       &-categories
         &__block
-          width: 140px
+          width: 200px
           height: 182px
           padding: 20px 24px 12px 24px
       &__img
@@ -638,7 +754,7 @@
       &-wrapper
         margin-bottom: 50px
     .categories
-      padding-bottom: 98px
+      padding-bottom: 33px
       &__container
         padding-top: 44px
     .slide
@@ -649,6 +765,7 @@
           padding-bottom: 0
           padding-right: 20px
           padding-left: 16px
+          width: 140px
       &-block
         &__name
           font-size: 16px
@@ -826,11 +943,19 @@
       &__block
         &-big
           margin-bottom: 21px
+          margin-right: 0
+      &__preface
+        align-items: flex-start
       &__text
         margin-bottom: 7px
+        text-align: start
+      &__name
+        text-align: start
       &__all
         margin-top: 5px
         margin-bottom: 18px
+      &__left
+        margin-bottom: 20px
     .action
       &-container
         width: 100%
