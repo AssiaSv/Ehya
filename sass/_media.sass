@@ -11,6 +11,8 @@
     padding-top: 35px
     &-right
       padding: 145px 119px
+    &-left
+      padding-right: 2px
   .description
     padding-top: 0
   .recomendations
@@ -67,6 +69,10 @@
       overflow: hidden
     &__block
       width: 960px
+    &__about
+      width: 100%
+    &__video
+      height: 100%
   .partners
     &__container
       width: 960px
@@ -104,6 +110,11 @@
     &-unedited
       &__wrapp
         margin: 0 auto
+    &-button
+      &--prev
+        left: -26px
+      &--next
+        right: -2px
 @media (max-width: 991px)
   .container
     max-width: 737px
@@ -136,8 +147,26 @@
       padding: 16px 19px
       font-size: 14px
   .info
+    flex-direction: column
+    align-items: center
+    justify-content: center
     &-left
-      padding-right: 57px
+      padding: 0
+      margin-bottom: 80px
+    &-right
+      padding: 82px 40px
+    &__title
+      text-align: center
+      &-bottom
+        text-align: center
+    &__name
+      text-align: center
+    &__text
+      text-align: center
+  .button
+    justify-content: center
+  .description
+    padding-bottom: 65px
   .modal
     &__dialog
       padding: 33px 68px
@@ -171,7 +200,7 @@
     &__about
       max-width: 737px
     &__big
-      max-width: 737px
+      width: 737px
     &__block
       max-width: 737px
     &__card
@@ -180,7 +209,6 @@
       width: 350px
       height: 250px
     &__img
-      width: 100%
       height: 100%
     &__card
       &--hidden
@@ -338,17 +366,17 @@
     .slide
       &-button
         &--prev
-          left: 90px
-          top: 60%
+          left: 72px
+          top: 269px
         &--next
           right: 90px
           top: 276px
     .history
       &__big
-        max-width: 100%
-      &__video
         width: 100%
         height: 250px
+      &__video
+        height: 100%
       &__container
         max-width: 87%
       &__about
@@ -365,7 +393,6 @@
         height: 180px
         margin-right: 0
       &__img
-        width: 100%
         height: 100%
     .partners
       &__container
@@ -456,9 +483,9 @@
         width: 210px
       &__big
         width: 100%
-      &__video
-        width: 100%
         height: 210px
+      &__video
+        height: 100%
       &__mini
         width: 200px
         height: 138px
@@ -496,6 +523,7 @@
           display: flex
           flex-direction: column
           align-items: center
+          margin-right: 0
       &__subname
         font-size: 14px
         line-height: 20px
@@ -634,7 +662,7 @@
       padding-top: 29px
       &-left
         padding-top: 0
-        padding-bottom: 36px
+        margin-bottom: 36px
       &-right
         padding: 59px 68px 59px 68px
         &__img
@@ -696,6 +724,7 @@
     .card
       flex-direction: column
       align-items: center
+      margin-bottom: 26px
       &-left
         padding: 0
         position: relative
@@ -760,16 +789,18 @@
         margin-top: 5px
       &__line
         margin-bottom: 32px
+      &-block
+        padding-bottom: 16px
     .recomendations
       &-wrapper
-        margin-bottom: 50px
+        margin-bottom: 56px
     .card
       &__button
         width: 115px
     .categories
-      padding-bottom: 33px
+      padding-bottom: 39px
       &__container
-        padding-top: 44px
+        padding-top: 48px
     .slide
       &-categories
         &__block
@@ -797,11 +828,14 @@
         width: 48px
         height: 48px
         &--next
-          right: 96px
-          top: 453px
+          right: 97px
+          top: 457px
         &--prev
-          left: 72px
-          top: 445px
+          left: 74px
+          top: 451px
+        &__img
+          width: 14px
+          height: 14px
     .categories
       &__container
         max-width: 300px
@@ -856,9 +890,10 @@
         margin-left: auto
         margin-right: auto
         margin-bottom: 21px
-      &__video
         width: 300px
         height: 210px
+      &__video
+        height: 100%
       &__play
         width: 56px
         height: 56px
@@ -975,7 +1010,7 @@
       &-wrapper
         border-radius: 0
         padding-top: 0
-        padding-bottom: 26px
+        padding-bottom: 27px
         &::after
           width: 786px
           height: 786px
@@ -990,6 +1025,8 @@
         line-height: 36px
         width: 280px
         margin-bottom: 16px
+        margin-left: 7px
+        margin-top: 2px
       &__form
         width: 272px
         height: 112px
@@ -999,6 +1036,7 @@
         width: 100%
         padding: 17px 48px 17px 48px
         margin-bottom: 59px
+        font-size: 16px
       &__button
         bottom: 0
         top: 57px
@@ -1013,7 +1051,7 @@
         font-size: 28px
         line-height: 36px
     .footer
-      padding-top: 30px
+      padding-top: 29px
       &__name
         font-size: 16px
         line-height: 22px
@@ -1032,6 +1070,8 @@
         margin-bottom: 13px
       &__item
         margin-bottom: 16px
+        &--ml
+          margin-left: 7px
       &__block
         &-logo
           margin-bottom: 10px
