@@ -23,6 +23,7 @@ function openModal() {
   modalOverlay.addClass("modal__overlay--visible")
   modalDialog.addClass("modal__dialog--visible")
   $("body").addClass("modal-open");
+  $("body").addClass("body__no-scroll");
 }
 function closeModal(event) {
   event.preventDefault()
@@ -31,6 +32,7 @@ function closeModal(event) {
   modalOverlay.removeClass("modal__overlay--visible")
   modalDialog.removeClass("modal__dialog--visible")
   $("body").removeClass("modal-open");
+  $("body").removeClass("body__no-scroll");
 }
 $(document).keyup(function (e) {
   if (e.key === "Escape") {
@@ -38,6 +40,7 @@ $(document).keyup(function (e) {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    $("body").removeClass("body__no-scroll");
   }
   });
 
