@@ -95,6 +95,9 @@
     max-height: 200px
     overflow: auto
 .button
+  display: flex
+  justify-content: start
+  align-items: start
   &__buy
     font-size: 16px
     line-height: 22px
@@ -109,13 +112,18 @@
     font-style: normal
     font-weight: bold
     border-radius: 8px
+    min-width: 209px
+    min-height: 58px
   &__read
+    min-width: 234px
+    min-height: 58px
     font-size: 18px
     line-height: 25px
     background-color: $light
     border: 2px solid $blue
     color: $blue
-    padding: 15px 50px
+    padding: 14px
+    text-align: center
     cursor: pointer
     outline: none
     text-decoration: none

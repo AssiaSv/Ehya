@@ -5,8 +5,6 @@
     &-container
       max-width: 960px
   .button
-    &__read
-      padding: 16px 29px
     &__buy
       padding: 16px 22px
   .info
@@ -319,12 +317,16 @@
 
     .button
       margin-bottom: 40px
+      flex-direction: column
+      align-items: center
       &__read
-        padding: 16px 50px
         font-size: 16px
       &__buy
         padding: 16px 36px
         font-size: 16px
+        min-width: 234px
+        margin-bottom: 10px
+        margin-right: 0
     .modal
       &__dialog
         width: 400px
@@ -663,13 +665,15 @@
         padding: 8px 0px 6px 0px
         font-size: 16px
         line-height: 22px
-        width: 176px
+        min-width: 176px
+        min-height: 40px
       &__read
         padding: 9px 0px 5px 0px
         font-size: 16px
         line-height: 22px
         margin-bottom: 0
-        width: 176px
+        min-width: 176px
+        min-height: 40px
     .burger
       margin-right: 4px
     .modal
@@ -759,6 +763,9 @@
     .recomendations
       &-wrapper
         margin-bottom: 50px
+    .card
+      &__button
+        width: 115px
     .categories
       padding-bottom: 33px
       &__container
