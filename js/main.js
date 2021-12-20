@@ -68,6 +68,10 @@ $(document).keyup(function (e) {
   });
   $(".phone").mask("+7(999) 999-99-99");
 
+  // отображение результата
+  header('Location:thankyou.html');
+
+
   //Слайдер 1
 
   var categoriesSlider = new Swiper(".slider-categories__container", {
