@@ -22,7 +22,6 @@ function openModal() {
   var modalDialog = $(".modal__dialog");
   modalOverlay.addClass("modal__overlay--visible")
   modalDialog.addClass("modal__dialog--visible")
-  $("body").addClass("modal-open");
   $("body").addClass("body__no-scroll");
 }
 function closeModal(event) {
